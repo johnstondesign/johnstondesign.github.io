@@ -1,6 +1,4 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto+Condensed');
-@import url('https://fonts.googleapis.com/css?family=Arbutus+Slab');
-@import url('https://fonts.googleapis.com/css?family=Coustard');
 @import url('https://fonts.googleapis.com/css?family=Enriqueta');
 * {
 	padding: 0;
@@ -13,7 +11,7 @@ section {
 }
 
 nav {
-	font-family: 'Roboto Condensed', Helvetica, sans-serif;
+	font-family: 'Enriqueta', Georgia, serif;
 	font-size: 14px;
 	padding: 15px;
 	padding-top: 30px;
@@ -21,8 +19,8 @@ nav {
 
 h1 {
 	color: #e2d456;
-	font-family: 'Enriqueta', Helvetica, sans-serif;
-	font-size: 100px;
+	font-family: 'Roboto Condensed', Helvetica, sans-serif;
+	font-size: 70px;
 	font-weight: 100;
 	text-align: center;
 }
@@ -70,13 +68,11 @@ footer {
 }
 
 footer a {
-	text-decoration: none;
+	text-decoration: underline;
 	color: white;
-	border-bottom: 1px solid white;
 	padding-bottom: 1px;
 	display:inline-block;
 	margin-bottom: 1px; 
-	line-height: 15px;
 }
 h1, h3 {
 	margin: 20px 0;
@@ -96,13 +92,13 @@ img {
 #skinny-nav-column {
 	position:fixed;
 	top: 0; left: 0; width: 100px; padding-top: 25px; 
-	background-color: #eeeeee;
+	background-color: white;
 	height: 100vh;
 	}
 
 #main-column {
 	padding-left: 100px;
-	background-color: white;
+	background-color: #eeeeee;
 }
 
 #hero-img-plus-headline {
@@ -120,25 +116,77 @@ img {
 }
 
 .skinny-nav-leading:hover {
-	color: white;
+	color: #e2d456;
 }
 
 #and-pass-about-it {
 	margin-top: 22px;
 }
 
+#lcd-icons-container {
+	width: 400px;
+	margin: 0 auto;
+	padding: 20px;
+}
+
+.lcd-icons {
+	float: left;
+	width: 110px;
+	padding right: 20px;
+	padding-left: 20px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
 .portfolio-selection {
 	width: 25%;
 	float: left;
-	height: 200px;
+	position: relative;
+}
+
+.portfolio-selection img {
+	display: block;
+}
+
+.portfolio-selection figcaption {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	color: white;
+	background-color: #4e2d67;
+	opacity: 0;
+	-webkit-transition: all 500ms cubic-bezier(0.250, 0.250, 0.750, 0.750); 
+   -moz-transition: all 500ms cubic-bezier(0.250, 0.250, 0.750, 0.750); 
+     -o-transition: all 500ms cubic-bezier(0.250, 0.250, 0.750, 0.750); 
+        transition: all 500ms cubic-bezier(0.250, 0.250, 0.750, 0.750); /* linear */
+}
+
+.portfolio-selection:nth-child(odd) figcaption {
+	background-color: #d8c821;
+}
+
+.portfolio-selection:hover figcaption {
+	opacity: 1;
+}
+
+.portfolio-selection h4 {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
 }
 
 #client-logos {
-	padding: 200px;
-	background-color: white;
+	padding-top: 250px;
+	padding-bottom: 200px;
+	background-color: #eeeeee;
 }
 
 span {
 	color: gray;
 	font-size: 14px;
 }
+
+
+
