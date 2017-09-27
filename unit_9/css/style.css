@@ -1,0 +1,520 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed');
+@import url('https://fonts.googleapis.com/css?family=Enriqueta');
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+section {
+	background color: white;
+}
+
+nav {
+	font-family: 'Enriqueta', Georgia, serif;
+	font-size: 14px;
+	padding: 15px;
+	padding-top: 30px;
+}
+
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+.mySlides {
+    display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor:pointer;
+  height: 13px;
+  width: 13px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+h1 {
+	color: #e2d456;
+	font-family: 'Roboto Condensed', Helvetica, sans-serif;
+	font-size: 70px;
+	font-weight: 100;
+	text-align: center;
+}
+
+h2 {
+	color: gray;
+	font-family: 'Enriqueta', Georgia, serif;
+	font-size: 1.7em;
+	line-height: 1em;
+	font-weight: 100;
+	text-align: center;
+	padding: 10px;
+}
+
+h3 {
+	color: #3b3b3c;
+	font-family: 'Roboto Condensed', Helvetica, sans-serif;
+	font-size: 16px;
+	font-weight: 100;
+	text-align: center;
+	line-height: 20px;
+}
+
+h4 {
+	color: white;
+	font-family: 'Roboto Condensed', Helvetica, sans-serif;
+	font-size: 16px;
+	font-weight: 100;
+	text-align: center;
+	line-height: 20px;
+}
+
+h5 {
+	color: white;
+	font-family: 'Roboto Condensed', Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: 100;
+	text-align: center;
+	padding: 10px;
+}
+
+p {
+	color: #3b3b3c;
+	font-family: 'Roboto Condensed', Helvetica, sans-serif;
+	text-align: left;
+	font-size: 16px;
+}
+
+footer {
+	background-color: #cccccc;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	text-align: center;
+	margin-top: 10px;
+	line-height: 1em;
+}
+
+footer a {
+	text-decoration: underline;
+	color: #3b3b3c;
+	padding-bottom: 10px;
+	display: inline-block;
+	margin-bottom: 1px; 
+}
+
+img {
+	width: 100%;
+}
+
+.clearfix:after {
+	display: block;
+	content:"";
+	clear: both;
+}
+
+#skinny-nav-column {
+	position:fixed;
+	top: 0; left: 0; width: 100px; padding-top: 25px; 
+	background-color: white;
+	height: 100vh;
+	}
+
+#main-column {
+	padding-left: 100px;
+	background-color: #eeeeee;
+}
+
+#hero-img-plus-headline {
+	position: relative;
+}
+
+#hero-headline {
+	position: absolute;
+	top: 50%; left:50%; transform: translate(-50%, -50%);
+}
+
+.skinny-nav-leading {
+	display: block; margin-bottom: 10px;
+	text-decoration: none;
+}
+
+.skinny-nav-leading:hover {
+	color: #e2d456;
+}
+
+#and-pass-about-it {
+	margin-top: 22px;
+}
+
+#lcd-icons-container {
+	width: 400px;
+	margin: 0 auto;
+	padding: 20px;
+}
+
+.lcd-icons {
+	float: left;
+	width: 33.3333%;
+	padding-right: 10px;
+	padding-left: 10px;
+	padding-top: 10px;
+	padding-bottom: 20px;
+}
+.portfolio-selection {
+	width: 25%;
+	float: left;
+	position: relative;
+}
+
+.portfolio-selection img {
+	display: block;
+}
+
+.portfolio-selection figcaption {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	color: white;
+	text-align: center;
+/*	background-color: #4e2d67;*/
+	opacity: 0;
+	-webkit-transition: all 500ms cubic-bezier(0.250, 0.250, 0.750, 0.750); 
+   -moz-transition: all 500ms cubic-bezier(0.250, 0.250, 0.750, 0.750); 
+     -o-transition: all 500ms cubic-bezier(0.250, 0.250, 0.750, 0.750); 
+        transition: all 500ms cubic-bezier(0.250, 0.250, 0.750, 0.750); /* linear */
+}
+
+.portfolio-selection.yellow figcaption {
+	background-color: #d8c821;
+}
+
+.portfolio-selection.purple figcaption {
+	background-color: #4e2d67;
+}
+
+.portfolio-selection:hover figcaption {
+	opacity: 1;
+}
+
+.portfolio-selection h4 {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+
+#client-logos-container {
+	padding-top: 30px;
+	padding-bottom: 10px;
+	background-color: #eeeeee;
+}
+
+.client-logo {
+	float: left;
+	width: 16.6666%;
+	position: relative;
+}
+
+.client-logo img{
+	display: block;
+	margin: 0 auto;
+}
+
+.more-info h2{
+	/*padding: none;*/
+/*	background-color: yellow;*/
+	border: none;
+	padding-bottom: 30px;
+	padding-top: 20px;
+}
+
+.copyright {
+	background-color: #3b3b3c;
+	padding: 7px;
+	text-align: center;
+	font-size: 12px;
+}
+
+span {
+	color: #4e2d67;
+	font-size: 16px;
+	font-weight: 900;
+}
+
+#lander {
+	display: none;
+}
+
+@media screen and (max-width: 1024px) {
+	.portfolio-selection {
+		width: 50%;
+	}
+}	
+
+@media screen and (max-width: 1024px) {
+	.client-logo {
+		width: 50%;
+	}
+}	
+
+@media screen and (max-width: 1024px) {
+	h1 {
+		font-size: 3.2em;
+	}
+}	
+
+@media screen and (max-width: 1024px) {
+	h2 {
+		font-size: 1.4em;
+		line-height: 1.5em;
+	}		
+}
+@media screen and (max-width: 800px) {
+	.portfolio-selection {
+		width: 50%;
+	}
+}
+@media screen and (max-width: 800px) {
+	.client-logo {
+		width: 50%;
+	}
+}	
+
+@media screen and (max-width: 800px) {
+	h1 {
+		font-size: 2.8em;
+	}
+}
+
+@media screen and (max-width: 800px) {
+	h2 {
+		font-size: 1em;
+		line-height: 1.5em;
+	}
+}
+
+
+@media screen and (max-width: 600px) {
+	#skinny-nav-column {
+		display: none;
+	}
+	#lander { 
+	display: block; 
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 9;
+	width: 100%
+	}
+	#lander nav {
+	height: 100vh;
+	background-color: #eee;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 7;
+	}
+
+	#toggle {
+	z-index: 9;
+	/*visibility: hidden;*/
+	display: block;
+	width: 30px;
+	height: 30px;
+	}
+	#hamburger {
+		width: 20px;
+		height: 20px;
+	}
+	#hamburger span {
+		display: block;
+		width: 100%;
+		height: 2px;
+		background-color: white;
+		margin-bottom: 3px;
+	}
+	#toggle {
+		position: absolute;
+		top: 10px
+		left: 10px;
+	}
+	#hamburger {
+		position: absolute;
+		top: 20px
+		left: 20px;
+	}
+}
+
+
+@media screen and (max-width:600px){
+	nav{
+		display: none;
+	}
+
+	nav a:link{
+		display: block;
+		padding: 5px;
+		margin:5px;
+		text-align: center;
+		text-decoration: none;
+/*		background: yellow;*/
+	}
+
+	label{
+		display: block;
+	}
+
+	#toggle:checked + nav{
+		display: block;
+	}
+
+}
+
+@media screen and (max-width: 600px) {
+	#main-column {
+		width: 100%;
+		padding: 0;
+	}
+	.mobile-logo {
+		width: 100px;
+		display: block;
+		margin: 0 auto;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.portfolio-selection {
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	h1 {
+		font-size: 2.3em;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	h2 {
+		font-size: .9em;
+		line-height: 1.2em;
+		padding: 10px;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	h4{
+		font-size: 1em;
+		line-height: 1.5em;
+		text-align: center;
+	}
+}	
+
+@media screen and (max-width: 600px) {
+	.client-logo {
+		width: 100%;
+		float: none;
+	}
+}
+
+@media screen and (max-width: 320px) {
+	h1 {
+		font-size: 1.7em;
+	}
+}
+
+@media screen and (max-width: 320px) {
+	h2 {
+		font-size: .9em;
+		line-height: 1.5em;
+		padding: 5px;
+	}
+}
+
+@media screen and (max-width: 320px) {
+	#lcd-icons-container {
+		padding: 0;
+		width: 320px;
+	}	
+}
+
